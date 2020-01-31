@@ -116,6 +116,11 @@ spec:
                 If unset, defaults to 2.
               format: int32
               type: integer
+            proxyprotocol:
+              description: proxyprotocol is a flag used to indicate whether the ingress routers should be configured to accept the PROXY Protocol or not.
+                If unset, defaults to false, unless the Infrastructure platform is of type AWS, which it is enabled by default.
+              format: bool
+              type: boolean
             routeSelector:
               description: routeSelector is used to filter the set of Routes serviced
                 by the ingress controller. This is useful for implementing shards.  If
